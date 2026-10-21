@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fretboard Revealed - Blueprint & Anatomy</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --accent-glow: rgba(56, 189, 248, 0.2);
+            --border: #334155;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: var(--bg-color); color: var(--text-main); line-height: 1.6; padding: 20px; }
+        header { max-width: 900px; margin: 0 auto 30px auto; text-align: center; padding: 40px 20px; background: var(--card-bg); border-radius: 12px; border: 1px solid var(--border); box-shadow: 0 10px 25px -5px var(--accent-glow); }
+        h1 { font-size: 2.5rem; color: var(--accent); margin-bottom: 10px; }
+        p.subtitle { color: var(--text-muted); font-size: 1.1rem; }
+        nav { display: flex; justify-content: center; gap: 15px; margin-top: 20px; }
+        nav a { text-decoration: none; color: var(--text-main); background: #334155; padding: 8px 16px; border-radius: 6px; font-weight: 600; transition: background 0.2s; }
+        nav a.active, nav a:hover { background: var(--accent); color: var(--bg-color); }
+        main { max-width: 900px; margin: 0 auto; display: flex; flex-direction: column; gap: 25px; }
+        section { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 30px; }
+        h2 { color: var(--accent); margin-bottom: 15px; font-size: 1.5rem; border-bottom: 2px solid var(--border); padding-bottom: 8px; }
+        p { margin-bottom: 15px; color: #e2e8f0; }
+        ul { margin-left: 20px; margin-bottom: 15px; color: #cbd5e1; }
+        li { margin-bottom: 8px; }
+        .highlight-box { background: rgba(56, 189, 248, 0.1); border-left: 4px solid var(--accent); padding: 15px; border-radius: 0 8px 8px 0; margin: 15px 0; }
+        .fretboard-preview { display: grid; grid-template-columns: repeat(13, 1fr); gap: 4px; background: #090d16; padding: 15px; border-radius: 8px; overflow-x: auto; margin-top: 15px; text-align: center; font-family: monospace; font-size: 0.9rem; }
+        .fret-cell { background: #273548; padding: 8px 2px; border-radius: 4px; color: #38bdf8; }
+        .fret-header { background: #111827; color: var(--text-muted); font-weight: bold; }
+        footer { text-align: center; margin-top: 40px; color: var(--text-muted); font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Fretboard Revealed</h1>
+        <p class="subtitle">The Blueprint to Demystifying Notes on the Guitar Neck</p>
+        <nav>
+            <a href="index.html" class="active">1. Layout & Blueprint</a>
+            <a href="tutorial.html">2. Utility & Application</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Introduction: Unlocking the Neck</h2>
+            <p>For most guitarists, the fretboard looks like a complex maze of random dots and metal bars. However, underneath the surface lies a clean, predictable mathematical matrix. Once you learn how the musical alphabet maps onto the strings, the entire layout unfolds logically.</p>
+            <div class="highlight-box">
+                <strong>Core Philosophy:</strong> Stop memorizing random notes in isolation. Instead, understand the <em>intervals</em> and the <em>relationship</em> between strings and frets.
+            </div>
+        </section>
+
+        <section>
+            <h2>The Natural Notes & The Two Special Rules</h2>
+            <p>Western music relies on 7 natural musical alphabet notes: <strong>A – B – C – D – E – F – G</strong>. On a piano, these correspond to the white keys. On a guitar, moving up by one fret means moving up by one <em>half-step</em> (semitone).</p>
+            <p>Between most of these natural notes sit "in-between" notes (sharps ♯ / flats ♭). But there is a crucial catch every guitarist must memorize:</p>
+            <ul>
+                <li>There is <strong>no sharp/flat</strong> between <strong>B and C</strong>. They are right next to each other (1 fret apart).</li>
+                <li>There is <strong>no sharp/flat</strong> between <strong>E and F</strong>. They are also right next to each other (1 fret apart).</li>
+            </ul>
+            <p>Every other natural note pair has a fret in between them (e.g., A to B has A♯/B♭).</p>
+        </section>
+
+        <section>
+            <h2>Visualizing a Single String (Low E String Layout)</h2>
+            <p>Let's map out the first 12 frets of the thickest string (the Low E string) using our rules:</p>
+            
+            <div class="fretboard-preview">
+                <div class="fret-cell fret-header">Open</div>
+                <div class="fret-cell fret-header">1</div>
+                <div class="fret-cell fret-header">2</div>
+                <div class="fret-cell fret-header">3</div>
+                <div class="fret-cell fret-header">4</div>
+                <div class="fret-cell fret-header">5</div>
+                <div class="fret-cell fret-header">6</div>
+                <div class="fret-cell fret-header">7</div>
+                <div class="fret-cell fret-header">8</div>
+                <div class="fret-cell fret-header">9</div>
+                <div class="fret-cell fret-header">10</div>
+                <div class="fret-cell fret-header">11</div>
+                <div class="fret-cell fret-header">12</div>
+
+                <div class="fret-cell">E</div>
+                <div class="fret-cell">F</div>
+                <div class="fret-cell">F#</div>
+                <div class="fret-cell">G</div>
+                <div class="fret-cell">G#</div>
+                <div class="fret-cell">A</div>
+                <div class="fret-cell">A#</div>
+                <div class="fret-cell">B</div>
+                <div class="fret-cell">C</div>
+                <div class="fret-cell">C#</div>
+                <div class="fret-cell">D</div>
+                <div class="fret-cell">D#</div>
+                <div class="fret-cell">E</div>
+            </div>
+            <p style="margin-top: 15px; font-size: 0.95rem; color: var(--text-muted);">Notice how the 12th fret cycles right back to <strong>E</strong>, duplicating your open string exactly one octave higher.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Fretboard Revealed Tutorial Series. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
