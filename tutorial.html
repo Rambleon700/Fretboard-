@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fretboard Revealed - Utility & Application Tutorial</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --accent-glow: rgba(56, 189, 248, 0.2);
+            --border: #334155;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: var(--bg-color); color: var(--text-main); line-height: 1.6; padding: 20px; }
+        header { max-width: 900px; margin: 0 auto 30px auto; text-align: center; padding: 40px 20px; background: var(--card-bg); border-radius: 12px; border: 1px solid var(--border); box-shadow: 0 10px 25px -5px var(--accent-glow); }
+        h1 { font-size: 2.5rem; color: var(--accent); margin-bottom: 10px; }
+        p.subtitle { color: var(--text-muted); font-size: 1.1rem; }
+        nav { display: flex; justify-content: center; gap: 15px; margin-top: 20px; }
+        nav a { text-decoration: none; color: var(--text-main); background: #334155; padding: 8px 16px; border-radius: 6px; font-weight: 600; transition: background 0.2s; }
+        nav a.active, nav a:hover { background: var(--accent); color: var(--bg-color); }
+        main { max-width: 900px; margin: 0 auto; display: flex; flex-direction: column; gap: 25px; }
+        section { background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; padding: 30px; }
+        h2 { color: var(--accent); margin-bottom: 15px; font-size: 1.5rem; border-bottom: 2px solid var(--border); padding-bottom: 8px; }
+        h3 { color: #7dd3fc; margin: 15px 0 8px 0; font-size: 1.2rem; }
+        p { margin-bottom: 15px; color: #e2e8f0; }
+        ul, ol { margin-left: 20px; margin-bottom: 15px; color: #cbd5e1; }
+        li { margin-bottom: 8px; }
+        .step-box { background: #111827; border: 1px solid var(--border); padding: 20px; border-radius: 8px; margin: 15px 0; }
+        .step-num { color: var(--accent); font-weight: bold; font-size: 1.1rem; margin-bottom: 5px; }
+        footer { text-align: center; margin-top: 40px; color: var(--text-muted); font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Fretboard Revealed: Tutorial</h1>
+        <p class="subtitle">Step-by-Step Action Guide on How to Utilize Fretboard Knowledge</p>
+        <nav>
+            <a href="index.html">1. Layout & Blueprint</a>
+            <a href="tutorial.html" class="active">2. Utility & Application</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>How to Put the System into Action</h2>
+            <p>Knowing what the notes are on paper is entirely different from finding them instantly while improvising, writing songs, or building chords. This tutorial outlines the exact methods required to internalize the fretboard permanently.</p>
+        </section>
+
+        <section>
+            <h2>Step 1: Master String-to-String Anchors</h2>
+            <p>You don't need to memorize every string from scratch. The strings are physically linked to one another by fixed pitch intervals. The most powerful anchor is the <strong>5th-Fret Rule</strong>:</p>
+            <div class="step-box">
+                <div class="step-num">The 5th Fret Bridge Marker</div>
+                <p>If you press down on the <strong>5th fret</strong> of any lower string, it produces the exact same pitch as the <strong>next open higher string</strong> (except for the transition from G to B string, which happens at the 4th fret).</p>
+                <ul>
+                    <li>5th fret of Low E string = <strong>A</strong> (Matches open A string)</li>
+                    <li>5th fret of A string = <strong>D</strong> (Matches open D string)</li>
+                    <li>5th fret of D string = <strong>G</strong> (Matches open G string)</li>
+                    <li>4th fret of G string = <strong>B</strong> (Matches open B string)</li>
+                    <li>5th fret of B string = <strong>E</strong> (Matches open high E string)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Step 2: Utilize Octave Shapes</h2>
+            <p>Octave shapes are geometric patterns that allow you to locate identical letter notes across different strings instantly. Because guitar playing relies heavily on physical shapes, octaves bridge the gap between scales and note names.</p>
+            
+            <h3>The Power-Chord / Octave Shape</h3>
+            <p>Root note on the Low E or A string, skipped string, and up two frets:</p>
+            <ul>
+                <li>If you have a root note on the 3rd fret of the Low E string (<strong>G</strong>), look down two strings and up two frets (5th fret of the D string)—that is <em>also</em> a <strong>G</strong>.</li>
+                <li>Using this visual shape prevents you from having to count up single frets one-by-one from the open position.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Step 3: Daily 5-Minute Practice Routine</h2>
+            <p>To truly utilize this layout, consistency beats cramming. Execute this simple daily exercise:</p>
+            <ol>
+                <li><strong>Pick One Target Note:</strong> Choose a note for the day, such as <em>F</em> or <em>A</em>.</li>
+                <li><strong>Find Every Instance:</strong> Locate every single instance of that note across all 6 strings from fret 0 to fret 12. Say the note name out loud as you play it.</li>
+                <li><strong>Connect Chords & Scales:</strong> When playing your standard major/minor chord shapes or pentatonic boxes, name every root note underlying the shape rather than just moving mechanical shapes blindly.</li>
+            </ol>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Fretboard Revealed Tutorial Series. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
